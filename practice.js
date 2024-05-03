@@ -1,4 +1,4 @@
-
+/*
 const myArray = [
   {
     title: 'hello world',
@@ -35,3 +35,15 @@ const myArray = [
     
   };
   func();
+  */
+
+  const arr = ['safdsadfsdfg', 'dsfsdvsdv', 'fdssdbfddaf', 'gdfgdvd', 20, 20, 40, 50, 60, 'dsadasf', 'dfsvsv'];
+
+  function functionForArr () {
+    for (let i = 0; i < arr.length; i++) {
+      let output = arr[i];
+      console.log(output);
+    }
+  };
+
+  functionForArr();
