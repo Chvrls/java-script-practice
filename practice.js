@@ -35,7 +35,7 @@ const myArray = [
     
   };
   func();
-  */
+  
 
   const arr = ['safdsadfsdfg', 'dsfsdvsdv', 'fdssdbfddaf', 'gdfgdvd', 20, 20, 40, 50, 60, 'dsadasf', 'dfsvsv', null, null];
 
@@ -43,8 +43,12 @@ const myArray = [
     for (let i = 0; i < arr.length; i++) {
       let output = arr[i];
       console.log(output);
+
+      if (arr[i == null]) {
+        break;
+      }
     }
-    removeNull();
+    //removeNull();
   };
   functionForArr();
 
@@ -57,4 +61,10 @@ const myArray = [
   console.log(arrFiltered);
 };
 
-removeNull();
+//removeNull();
+ */
+
+let userInput = prompt("What is your name?").toLowerCase();
+let oneUpperCase = userInput.slice(0, 1).toUpperCase();
+
+alert("Hello " + userInput.slice(0, 1).toUpperCase() + userInput.slice(1, userInput.length));
