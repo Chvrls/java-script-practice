@@ -74,7 +74,7 @@ let dogAge = prompt("Enter the dog's age to convert it to human age: ");
 humanAge = ((dogAge - 2) * 4) + 21;
 
 alert("Your dog's human age is: " + humanAge);
-*/
+
 
 function getMilk (money) {
   let milk = 1.5;
@@ -84,3 +84,21 @@ function getMilk (money) {
 }
 
 getMilk(5);
+*/
+// take your current age
+// expectancy of life span is 90 yrs old
+// tells how many days weeks and months we have left
+//
+function lifeInWeeks (age) {
+  age = prompt("How old are you?");
+  let lifeSpan = 90;
+  let daysLeft;
+  let weeksLeft;
+  let monthsLeft;
+
+  daysLeft = (lifeSpan - age) * 365;
+  weeksLeft = (lifeSpan - age) * 52;
+  monthsLeft = (lifeSpan - age) * 12
+  console.log("You have " + daysLeft + " days " + weeksLeft + " weeks " + monthsLeft + " months left");;
+}
+lifeInWeeks();
