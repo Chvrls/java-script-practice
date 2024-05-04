@@ -68,9 +68,19 @@ let userInput = prompt("What is your name?").toLowerCase();
 let oneUpperCase = userInput.slice(0, 1).toUpperCase();
 
 alert("Hello " + userInput.slice(0, 1).toUpperCase() + userInput.slice(1, userInput.length));
-*/
+
 
 let dogAge = prompt("Enter the dog's age to convert it to human age: ");
 humanAge = ((dogAge - 2) * 4) + 21;
 
 alert("Your dog's human age is: " + humanAge);
+*/
+
+function getMilk (money) {
+  let milk = 1.5;
+  let ableToBuy = Math.floor(money / milk);
+
+  console.log("The robot bought " + ableToBuy + " bottles of milk");
+}
+
+getMilk(5);
