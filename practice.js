@@ -103,16 +103,70 @@ function lifeInWeeks (age) {
 }
 lifeInWeeks();
 
-*/
+
 
 // getMilk with change
 function getMilk (money) {
   let costOfMilk = 2;
 
-  console.log("The robot bought " + Math.round(money / costOfMilk) + " bottles of milk.");
+  console.log("The robot bought " + calcBottles(money, costOfMilk) + " bottles of milk.");
   
-  return money % costOfMilk;
+  //return money % costOfMilk;
+ return calcChange(money, costOfMilk);
 }
 
-let change = getMilk(4);
-console.log("The change is " + change);
+
+
+function calcBottles (startingMoney, pricePerBottle) {
+  let numberOfBottles = Math.round(startingMoney / pricePerBottle);
+
+  return numberOfBottles;
+}
+
+
+function calcChange (startingAmount, pricePerBottle) {
+  let changeAmount = (startingAmount % pricePerBottle);
+
+  return changeAmount;
+}
+
+console.log("Hello, The change is " + getMilk(5) + " dollar/s" );
+
+
+//BMI CALCULATOR
+
+
+function bmiCalculator(weight, height) {
+  let calculatedBMI = Math.round(weight / height**2).toFixed(2); 
+  
+  return calculatedBMI;
+}
+
+let bmi = bmiCalculator(65, 1.8);
+console.log("Your BMI is " + bmi);
+*/
+
+function main (number) {
+  prompt("Enter the first name:");
+  prompt("Enter the second name");
+
+  alert("Your love score is " + calcRandomNumber(number) + "%");
+}
+// random number between 1 - 100
+function calcRandomNumber (randomNumber) {
+  randomNumber = Math.random();
+  randomNumber *= 100;
+  randomNumber = Math.floor(randomNumber) + 1;
+  
+  return randomNumber;
+}
+
+main();
+
+
+
+
+  
+
+
+
