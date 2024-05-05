@@ -110,8 +110,9 @@ function getMilk (money) {
   let costOfMilk = 2;
 
   console.log("The robot bought " + Math.round(money / costOfMilk) + " bottles of milk.");
-
-  console.log("The change is " + (money % costOfMilk));
+  
+  return money % costOfMilk;
 }
 
-getMilk(4);
+let change = getMilk(4);
+console.log("The change is " + change);
