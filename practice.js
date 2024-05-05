@@ -144,7 +144,7 @@ function bmiCalculator(weight, height) {
 
 let bmi = bmiCalculator(65, 1.8);
 console.log("Your BMI is " + bmi);
-*/
+
 
 function main (number) {
   prompt("Enter the first name:");
@@ -162,6 +162,29 @@ function calcRandomNumber (randomNumber) {
 }
 
 main();
+*/
+
+//BMI Calculator advanced if else
+// if below 18.5 you are underweight
+// if the bmi is in the range of 18.5 and 24.9 you are normal weight
+// if bmi is over 24.9 you are overweight
+
+function bmiCalculator (weight, height) {
+  let bmi = Math.round(weight / height**2).toFixed(1);
+
+  if (bmi < 18.5) {
+    console.log("Your BMI is " + bmi + " you are underweight");
+  }
+  else if (bmi >= 18.5 && bmi <= 24.9) {
+    console.log("Your BMI is " + bmi + " you are normalweight");
+  }
+  else if (bmi >= 25) {
+    console.log("Your BMI is " + bmi + " you are overweight");
+  }
+  
+}
+
+bmiCalculator(100, 1.8);
 
 
 
