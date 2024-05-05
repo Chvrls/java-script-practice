@@ -84,7 +84,7 @@ function getMilk (money) {
 }
 
 getMilk(5);
-*/
+
 // take your current age
 // expectancy of life span is 90 yrs old
 // tells how many days weeks and months we have left
@@ -102,3 +102,16 @@ function lifeInWeeks (age) {
   console.log("You have " + daysLeft + " days " + weeksLeft + " weeks " + monthsLeft + " months left");;
 }
 lifeInWeeks();
+
+*/
+
+// getMilk with change
+function getMilk (money) {
+  let costOfMilk = 2;
+
+  console.log("The robot bought " + Math.round(money / costOfMilk) + " bottles of milk.");
+
+  console.log("The change is " + (money % costOfMilk));
+}
+
+getMilk(4);
