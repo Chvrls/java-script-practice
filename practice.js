@@ -162,7 +162,6 @@ function calcRandomNumber (randomNumber) {
 }
 
 main();
-*/
 
 //BMI Calculator advanced if else
 // if below 18.5 you are underweight
@@ -187,6 +186,61 @@ function bmiCalculator (weight, height) {
 bmiCalculator(100, 1.8);
 
 
+// if modulo returns 0 then it is divisible otherwise it is not
+
+function isLeap(year) {
+  year = prompt("Enter a year to check if it is a leap year:");
+
+  if (year % 4 !== 0) {
+    console.log(year + " is not divisible by 4");
+    console.log("So " + year + " is not a leap year");
+  } 
+  else if ((year % 4 === 0) && (year % 100 === 0) && (year % 400 === 0)){
+    console.log(year + " is divisible by 4");
+    console.log(year + " is  divisible by 100");
+    console.log(year + " is divisible by 400");
+    console.log("So " + year + " is a leap year");
+  }
+  else if ((year % 4 === 0) && (year % 100 !== 0)) {
+    console.log(year + " is divisible by 4");
+    console.log(year + " is not divisible by 100");
+    console.log("So " + year + " Is a leap year");
+  }
+  else if ((year % 4 === 0) && (year % 100 === 0) && (year % 400 !== 0)) {
+    console.log(year + " is divisible by 4");
+    console.log(year + " is divisible by 100");
+    console.log(year + " is not divisible by 400");
+    console.log("So " + year + " is not a leap year");
+  }
+
+}
+  
+
+isLeap();
+*/
+//Angela Yu's Answer:
+function isLeap (years) {
+  years = prompt();
+  if (years % 4 === 0) {
+    if (years % 100 === 0) {
+      if (years % 400 === 0) {
+        //return "is a leap year";
+        console.log("is a leap year");
+      } else {
+        //return "is not a leap year";
+        console.log("is not a leap year");
+      }
+    } else {
+      //return "is a leap year";
+      console.log("is a leap year");
+    }
+  } else {
+    //return "is not a leap year";
+    console.log("is not a leap year");
+  }
+}
+
+isLeap();
 
 
   
