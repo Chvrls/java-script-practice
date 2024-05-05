@@ -217,7 +217,6 @@ function isLeap(year) {
   
 
 isLeap();
-*/
 //Angela Yu's Answer:
 function isLeap (years) {
   years = prompt();
@@ -241,6 +240,21 @@ function isLeap (years) {
 }
 
 isLeap();
+*/
+
+function guestList() {
+  let userName = prompt("Please type in your name");
+
+  let guests = ["Charles", "Julia", "Andrei", "Jhulianne", "Lara"];
+
+  if (guests.includes(userName)) {
+    console.log("Welcome");
+  } else {
+    console.log("Sorry maybe next time");
+  }
+
+}
+guestList();
 
 
   
