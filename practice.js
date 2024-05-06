@@ -244,16 +244,14 @@ isLeap();
 
 function guestList() {
   let userName = prompt("Please type in your name");
-  let message;
 
   let guests = ["Charles", "Julia", "Andrei", "Jhulianne", "Lara"];
 
   if (guests.includes(userName)) {
-    message = console.log("Welcome");
+    return console.log("Welcome");
   } else {
-    message = console.log("Sorry maybe next time");
+    return console.log("Sorry maybe next time");
   }
-  return message;
 }
 guestList();
 
