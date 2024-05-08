@@ -286,7 +286,7 @@ guestList();
   fizzBuzz();
   fizzBuzz();
   fizzBuzz();
-*/
+
   //my solution for the fizz buzz
   let output = [];
   let count = 1;
@@ -334,18 +334,30 @@ guestList();
   fizzBuzz();
   fizzBuzz();
   
+  */
+  //Angela Yu's solution for the fizz buzz
 
-  /*
   let output = [];
   let count = 1;
 
   function fizzBuzz () {
-    output.push(count);
-    count++;
 
-    if (count % 3 === 0) {
+    if(count % 3 === 0 && count % 5 === 0) {
+      output.push("FizzBuzz");
+    } 
+    else if (count % 3 === 0) {
       output.push("Fizz");
     }
+    else if (count % 5 === 0) {
+      output.push("Buzz");
+    }
+    else {
+      output.push(count);
+    }
+    
+    count++;
+
+   
 
     
     
@@ -370,7 +382,7 @@ guestList();
   fizzBuzz();
   fizzBuzz();
   fizzBuzz();
-*/
+
 
 
   
