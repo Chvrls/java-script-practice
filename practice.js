@@ -240,7 +240,7 @@ function isLeap (years) {
 }
 
 isLeap();
-*/
+
 
 function guestList() {
   let userName = prompt("Please type in your name");
@@ -254,6 +254,123 @@ function guestList() {
   }
 }
 guestList();
+
+
+// My solution to fizz buzz
+
+  let output = [];
+
+  function fizzBuzz () {
+    output.push(output.length + 1); 
+    
+    console.log(output);
+  }
+
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+
+  //Angela yu's solution to fizz buzz
+  
+  let output = [];
+  let count = 1;
+
+  function fizzBuzz() {
+
+    output.push(count);
+    count++
+
+    console.log(output);
+  }
+
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+*/
+  //my solution for the fizz buzz
+  let output = [];
+  let count = 1;
+
+  function fizzBuzz () {
+    output.push(count);
+    count++;
+
+    if(output.length % 3 === 0) {
+      output.pop();
+      output.push("Fizz");
+      if (output.length % 5 === 0) {
+        output.pop();
+        output.push("Buzz");
+        if ((output.length % 3 === 0) && (output.length % 5 === 0)) {
+          output.pop();
+          output.push("FizzBuzz");
+        };
+      }
+    }
+  
+
+    
+    
+    
+
+    console.log(output);
+  }
+
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  
+
+  /*
+  let output = [];
+  let count = 1;
+
+  function fizzBuzz () {
+    output.push(count);
+    count++;
+
+    if (count % 3 === 0) {
+      output.push("Fizz");
+    }
+
+    
+    
+
+    console.log(output);
+  }
+
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+  fizzBuzz();
+*/
 
 
   
