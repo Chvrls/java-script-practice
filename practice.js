@@ -334,7 +334,7 @@ guestList();
   fizzBuzz();
   fizzBuzz();
   
-  */
+  
   //Angela Yu's solution for the fizz buzz
 
   let output = [];
@@ -382,6 +382,24 @@ guestList();
   fizzBuzz();
   fizzBuzz();
   fizzBuzz();
+
+  */
+
+  let persons = ["Angela", "Ben", "Jenny", "Michael", "Chloe",];
+
+  function whosBuyingLunch (randomNumber) {
+    //console.log(persons[0]);
+    //console.log(persons.length);
+    randomNumber = Math.random();
+    randomNumber *= persons.length;
+    randomNumber = Math.floor(randomNumber);
+
+    return console.log(persons[randomNumber] + " is going to buy lunch today");
+    //console.log(randomNumber);
+    //console.log(persons);
+  }
+
+  whosBuyingLunch();
 
 
 
