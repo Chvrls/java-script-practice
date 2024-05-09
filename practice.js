@@ -383,24 +383,30 @@ guestList();
   fizzBuzz();
   fizzBuzz();
 
-  */
+  
   // My solution to whos going to buy lunch today
 
   let persons = ["Angela", "Ben", "Jenny", "Michael", "Chloe",];
 
   function whosBuyingLunch (randomNumber) {
-    //console.log(persons[0]);
-    //console.log(persons.length);
     randomNumber = Math.random();
     randomNumber *= persons.length;
     randomNumber = Math.floor(randomNumber);
 
     return console.log(persons[randomNumber] + " is going to buy lunch today");
-    //console.log(randomNumber);
-    //console.log(persons);
   }
 
   whosBuyingLunch();
+*/
+  //Angela Yu's Solution to whos buying lunch
+
+  function whosPaying(names) {
+    let numberOfPeople = names.length;
+    let randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    let randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is going to buy lunch today!"
+  }
 
 
 
