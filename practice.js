@@ -397,7 +397,7 @@ guestList();
   }
 
   whosBuyingLunch();
-*/
+
   //Angela Yu's Solution to whos buying lunch
 
   function whosPaying(names) {
@@ -407,6 +407,8 @@ guestList();
 
     return randomPerson + " is going to buy lunch today!"
   }
+  
+  */
 
 
 
